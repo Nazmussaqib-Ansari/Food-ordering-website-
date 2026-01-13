@@ -1,0 +1,114 @@
+.cartitems{
+    margin: 10px 20px;
+}
+.cartitems hr{
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+}
+.cartitems-format-main{
+    display: grid;
+    grid-template-columns: 3.5fr 2fr 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.cartitems-quantity{
+    height: 40px;
+    width: 100px;
+}
+.cartitems-down{
+    display: flex;
+    margin: 50px 0px;
+}
+.cartitems-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 30px;
+}
+.cartitem-total-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+.cartitems-total button{
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: #ff5a5a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.cartitems-total button:active{
+    background-color: rgb(214, 4, 4);
+}
+.cartitem-promocode{
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cartitem-promocode p{
+    color: #555;
+}
+.cartitem-promobox{
+    width: 300px;
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 50px;
+    background: #eaeaea;
+    border-radius: 10px;
+}
+.cartitem-promobox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+
+}
+.cartitem-promobox button{
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+  
+}.cartitem-promobox button:active{
+    background-color: #383838;
+}
+
+@media(max-width:809px){
+    .cartitems-down{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartitem-promocode{
+        padding: 30px;
+    }
+    .cartitems-format-main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .cartitems-total{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+}
